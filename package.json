@@ -1,6 +1,6 @@
 {
-  "name": "component-library",
-  "version": "0.0.1",
+  "name": "@erzabegu/ui-package-react",
+  "version": "0.0.2",
   "description": "A react component library",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -19,10 +19,18 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.3"
   },
-  "dependencies": {},
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/erzabegu"
+  },
+  "dependencies": {
+    "postcss": "^8.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.0"
+  }
 }
