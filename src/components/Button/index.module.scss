@@ -1,4 +1,7 @@
+@import '../../common/functions';
+
+
 .button {
   font-size: 60px;
-  color: pink;
+  color: get-color("success", "300");
 }
