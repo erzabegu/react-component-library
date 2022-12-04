@@ -1,0 +1,15 @@
+@import '../../common/typography';
+
+.light {
+  @extend .lightFont
+}
+
+.mediumFont {
+  @extend .mediumFont
+}
+
+
+.xxl {
+  font-size: 4.5rem; //72px
+  line-height: 5.625rem; //90px
+}
