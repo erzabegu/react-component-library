@@ -4,9 +4,9 @@ $lightFont: 'https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swa
 $regularFont: 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
 $mediumFont: 'https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap';
 $semiBoldFont: "https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap";
-$boldFont:"https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap";
-$extraBoldFont:"https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap";
-$blackFont:"https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap";
+$boldFont: "https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap";
+$extraBoldFont: "https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap";
+$blackFont: "https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap";
 
 @import url($thinFont);
 @import url($extraLightFont);
@@ -21,27 +21,35 @@ $blackFont:"https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap
 .thinFont {
   font-family: $thinFont;
 }
-.extraLightFont{
+
+.extraLightFont {
   font-family: $extraLightFont;
 }
-.lightFont{
+
+.lightFont {
   font-family: $lightFont;
 }
-.regularFont{
+
+.regularFont {
   font-family: $regularFont;
 }
-.mediumFont{
+
+.mediumFont {
   font-family: $mediumFont;
 }
-.semiBoldFont{
+
+.semiBoldFont {
   font-family: $semiBoldFont;
 }
-.extraBoldFont{
+
+.extraBoldFont {
   font-family: $extraBoldFont;
 }
-.boldFont{
+
+.boldFont {
   font-family: $boldFont;
 }
-.blackFont{
+
+.blackFont {
   font-family: $blackFont;
 }

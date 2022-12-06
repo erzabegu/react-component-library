@@ -1,19 +1,25 @@
 import React from "react";
 
-export interface TextTypes extends React.HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement> {
+interface defaultText extends React.HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement> {
     children: string;
-    variant:
-        | "h1"
+    weight?: "thin" | "extraLight" | "light" | "regular" | "medium" | "semiBold" | "bold" | "extraBold" | "black";
+}
+
+export interface DisplayHeadings extends defaultText {
+    display?: "xxl" | "xl" | "lg" | "md" | "sm" | "xs";
+    variant?: "h1"
         | "h2"
         | "h3"
         | "h4"
         | "h5"
-        | "h6"
-        | "p"
+        | "h6";
+}
+
+export interface DisplayText extends defaultText {
+    display?: "xl" | "lg" | "md" | "sm" | "xs";
+    variant?: "p"
         | "label"
         | "a"
         | "pre"
         | "span";
-    weight: "thin" | "extraLight" | "light" | "regular" | "medium" | "semiBold" | "bold" | "extraBold" | "black";
-    display: "xxl" | "xl" | "lg" | "md" | "sm" | "xs";
 }

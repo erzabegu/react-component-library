@@ -1,15 +1,93 @@
 @import '../../common/typography';
 
+.thin {
+  @extend .thinFont;
+}
+
+.extraLight {
+  @extend .extraLightFont;
+}
+
 .light {
-  @extend .lightFont
+  @extend .lightFont;
 }
 
-.mediumFont {
-  @extend .mediumFont
+.regular {
+  @extend .regularFont;
 }
 
+.medium {
+  @extend .mediumFont;
+}
 
-.xxl {
+.semiBold {
+  @extend .semiBoldFont;
+}
+
+.extraBold {
+  @extend .extraBoldFont;
+}
+
+.bold {
+  @extend .boldFont;
+}
+
+.black {
+  @extend .blackFont;
+}
+
+.xxlDisplay {
   font-size: 4.5rem; //72px
   line-height: 5.625rem; //90px
+}
+
+.xlDisplay {
+  font-size: 3.75rem; //60px
+  line-height: 4.5rem; //72px
+}
+
+.lgDisplay {
+  font-size: 3rem; //48px
+  line-height: 3.75rem; //60px
+}
+
+.mdDisplay {
+  font-size: 2.25rem; //36px
+  line-height: 2.75rem; //44px
+}
+
+.smDisplay {
+  font-size: 1.875rem; //30px
+  line-height: 2.375rem; //38px
+
+}
+
+.sxDisplay {
+  font-size: 1.5rem; //24px
+  line-height: 2rem; //32px
+}
+
+.xlText {
+  font-size: 1.25rem; //20px
+  line-height: 1.875rem; //30px
+}
+
+.lgText {
+  font-size: 1.125rem; //18px
+  line-height: 1.75rem; //28px
+}
+
+.mdText {
+  font-size: 1rem; //16px
+  line-height: 1.5rem; //24px
+}
+
+.smText {
+  font-size: 0.875rem; //14px
+  line-height: 1.25rem; //20px
+}
+
+.sxText {
+  font-size: 0.75rem; //12px
+  line-height: 1.125rem; //18px
 }
