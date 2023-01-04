@@ -13,7 +13,17 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/react": "^18.0.25",
-    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "rollup": "^2.78.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/react": "^18.0.25",
     "react": "^18.2.0",
     "rollup": "^2.78.0",
     "rollup-plugin-dts": "^5.0.0",
@@ -28,13 +38,16 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/erzabegu"
   },
+  "style": "dist/index.css",
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.1.0",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.16",
     "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.56.1",
     "scss": "^0.2.4"
   }
 }
