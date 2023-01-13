@@ -6,6 +6,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from 'rollup-plugin-postcss';
 import copy from "rollup-plugin-copy";
+import scss from "rollup-plugin-scss";
 
 
 const packageJson = require("./package.json");
@@ -61,12 +62,12 @@ export default [
         input: "src/hooks/index.ts",
         output: [
             {
-                file: "build/hooks.js",
+                file: "dist/hooks.js",
                 format: "cjs",
                 sourcemap: true
             },
             {
-                file: "build/hooks.esm.js",
+                file: "dist/hooks.esm.js",
                 format: "esm",
                 sourcemap: true
             }
@@ -80,6 +81,10 @@ export default [
                 extract: false,
                 modules: true,
                 use: ['sass'],
+            }),
+            scss({
+                output: "dist/css/style.css",
+                failOnError: true,
             }),
             copy({
                 targets: [
@@ -105,6 +110,10 @@ export default [
     {
         input: "dist/esm/types/index.d.ts",
         output: [{file: "dist/index.d.ts", format: "esm"}],
-        plugins: [dts()],
+        plugins: [dts(), scss({
+            output: "dist/css/style.css",
+            failOnError: true,
+        }),],
+
     },
 ];

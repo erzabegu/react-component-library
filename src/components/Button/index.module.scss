@@ -3,6 +3,7 @@
 
 .button {
   font-size: 60px;
-  color: get-color("success", "300");
+  background-color: var(--background);
+  //color: get-color("danger", "300");
   font-family: 'Inter', sans-serif;
 }
