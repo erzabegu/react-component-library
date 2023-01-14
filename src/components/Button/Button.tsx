@@ -8,6 +8,6 @@ export interface ButtonProps {
 
 const Button = ({label}: ButtonProps) => {
     const {toggleTheme} = useDarkMode();
-    return <button className={styles.button} onClick={() => toggleTheme()}>{label}</button>
+    return <button className={styles.button } onClick={() => toggleTheme()}>{label}</button>
 }
 export default Button
