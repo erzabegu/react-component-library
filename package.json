@@ -1,6 +1,6 @@
 {
   "name": "@erzabegu/ui-package-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A react component library",
   "main": "dist/cjs/index.js",
   "scripts": {
@@ -35,10 +35,6 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://www.npmjs.com/package"
-  },
   "style": "dist/index.css",
   "dependencies": {
     "autoprefixer": "^10.4.13",
@@ -50,13 +46,5 @@
     "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.56.1",
     "scss": "^0.2.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erzabegu/component-library.git.git"
-  },
-  "bugs": {
-    "url": "https://github.com/erzabegu/component-library.git/issues"
-  },
-  "homepage": "https://github.com/erzabegu/component-library.git#readme"
+  }
 }
