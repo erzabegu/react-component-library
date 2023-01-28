@@ -1,0 +1,11 @@
+:root {
+  background-color: rebeccapurple;
+}
+
+html[data-theme="dark"] {
+  background-color: #9A97F3;
+}
+
+html[data-theme="light"] {
+  background-color: lightgrey;
+}

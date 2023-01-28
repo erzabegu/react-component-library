@@ -1,0 +1,95 @@
+@import "../../common/breakpoints";
+
+.Grid {
+  display: grid;
+}
+
+@include respond-to("sm") {
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+  }
+  .colSMOne {
+    grid-column: span 1;
+  }
+  .colSMTwo {
+    grid-column: span 2;
+  }
+  .colSMThree {
+    grid-column: span 3;
+  }
+  .colSMFour {
+    grid-column: span 4;
+  }
+}
+
+@include respond-to("md") {
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 32px;
+  }
+  .colMDOne {
+    grid-column: span 1;
+  }
+  .colMDTwo {
+    grid-column: span 2;
+  }
+  .colMDThree {
+    grid-column: span 3;
+  }
+  .colMDFour {
+    grid-column: span 4;
+  }
+  .colMDFive {
+    grid-column: span 5;
+  }
+  .colMDSix {
+    grid-column: span 6;
+  }
+}
+
+@include respond-to("lg") {
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+  }
+  .colLGOne {
+    grid-column: span 1;
+  }
+  .colLGTwo {
+    grid-column: span 2;
+  }
+  .colLGThree {
+    grid-column: span 3;
+  }
+  .colLGFour {
+    grid-column: span 4;
+  }
+  .colLGFive {
+    grid-column: span 5;
+  }
+  .colLGSix {
+    grid-column: span 6;
+  }
+  .colLGSeven {
+    grid-column: span 7;
+  }
+  .colLGEight {
+    grid-column: span 8;
+  }
+  .colLGNine {
+    grid-column: span 9;
+  }
+  .colLGTen {
+    grid-column: span 10;
+  }
+  .colLGEleven {
+    grid-column: span 11;
+  }
+  .colLGTwelve {
+    grid-column: span 12;
+  }
+}

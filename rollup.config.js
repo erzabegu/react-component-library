@@ -54,6 +54,11 @@ export default [
                         dest: "dist",
                         rename: "variables.scss"
                     },
+                    {
+                        src: "src/common/styles.scss",
+                        dest: "dist",
+                        rename: "styles.scss"
+                    },
                 ]
             })
         ],
@@ -102,6 +107,65 @@ export default [
                         src: "src/common/variables.scss",
                         dest: "dist",
                         rename: "variables.scss"
+                    },
+                    {
+                        src: "src/common/styles.scss",
+                        dest: "dist",
+                        rename: "styles.scss"
+                    },
+                ]
+            })
+        ],
+    },
+    {
+        input: "src/icons/index.ts",
+        output: [
+            {
+                file: "dist/icons.js",
+                format: "cjs",
+                sourcemap: true
+            },
+            {
+                file: "dist/icons.esm.js",
+                format: "esm",
+                sourcemap: true
+            }
+        ],
+        plugins: [
+            peerDepsExternal(),
+            resolve(),
+            commonjs(),
+            typescript({tsconfig: "./tsconfig.json"}),
+            postcss({
+                extract: false,
+                modules: true,
+                use: ['sass'],
+            }),
+            scss({
+                output: "dist/css/style.css",
+                failOnError: true,
+            }),
+            copy({
+                targets: [
+                    {
+                        src: "src/common/mixins.scss",
+                        dest: "dist",
+                        rename: "mixins.scss"
+                    },
+                    {
+                        src: "src/common/dark.scss",
+                        dest: "dist",
+                        rename: "dark.scss"
+                    },
+                    {
+                        src: "src/common/variables.scss",
+                        dest: "dist",
+                        rename: "variables.scss"
+                    },
+                    {
+                        src: "src/common/styles.scss",
+                        dest: "dist",
+                        rename: "styles.scss"
                     },
                 ]
             })

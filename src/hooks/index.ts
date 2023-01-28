@@ -1,3 +1,4 @@
 import useDarkMode from "./useDarkMode";
+import useGenerateIcon from "./useGenerateIcon"
 
-export {useDarkMode}
+export {useDarkMode, useGenerateIcon}

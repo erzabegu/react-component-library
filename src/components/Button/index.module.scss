@@ -1,9 +1,84 @@
-@import "../../common/styles";
+@import "../../common/colors";
+@import "../../common/typography";
+@import "../Text/Text.scss";
 
-
+$iconSize: (
+        "sm": 36px,
+        "md": 40px,
+        "lg": 44px,
+        "xl": 48px,
+        "xxl": 58px,
+);
 .button {
-  font-size: 60px;
-  background-color: var(--background);
-  //color: get-color("danger", "300");
-  font-family: 'Inter', sans-serif;
+  all: unset;
+  pointer-events: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  word-break: break-all;
+  cursor: pointer;
+  color: white;
+
+  > * {
+    flex-shrink: 0;
+  }
+
+}
+
+@each $style, $value in $colors {
+  @each $size, $prop in $value {
+    .btn-#{$style} {
+      background-color: map-get($colors, $style, "600");
+
+      &:hover {
+        background-color: map-get($colors, $style, "700");
+      }
+
+      &:active {
+        outline: 4px solid map-get($colors, $style, "300");;
+      }
+
+      &:disabled {
+        background-color: map-get($colors, $style, "200");
+      }
+    }
+
+  }
+}
+
+
+.sm {
+  height: 36px;
+  padding: 8px 14px;
+
+}
+
+.md {
+  height: 40px;
+  padding: 10px 16px;
+}
+
+.lg {
+  height: 44px;
+  padding: 10px 18px;
+}
+
+.xl {
+  height: 48px;
+  padding: 12px 20px;
+}
+
+.xxl {
+  height: 60px;
+  padding: 16px 28px;
+}
+
+@each $key, $value in $iconSize {
+  .icon-#{$key} {
+    justify-content: center;
+    height: $value;
+    width: $value;
+  }
 }
