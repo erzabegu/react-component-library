@@ -1,6 +1,6 @@
 {
   "name": "erezabegu-component-library",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A react component library",
   "main": "dist/cjs/index.js",
   "scripts": {
