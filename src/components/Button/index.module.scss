@@ -1,13 +1,13 @@
-@import "../../common/colors";
-@import "../../common/typography";
-@import "../Text/Text.scss";
+@import '../../common/colors';
+@import '../../common/typography';
+@import '../Text/Text.scss';
 
 $iconSize: (
-        "sm": 36px,
-        "md": 40px,
-        "lg": 44px,
-        "xl": 48px,
-        "xxl": 58px,
+  'sm': 36px,
+  'md': 40px,
+  'lg': 44px,
+  'xl': 48px,
+  'xxl': 58px,
 );
 .button {
   all: unset;
@@ -24,35 +24,43 @@ $iconSize: (
   > * {
     flex-shrink: 0;
   }
-
 }
 
 @each $style, $value in $colors {
   @each $size, $prop in $value {
     .btn-#{$style} {
-      background-color: map-get($colors, $style, "600");
+      background-color: map-get($colors, $style, '600');
+      transition: background-color 0.5s;
 
       &:hover {
-        background-color: map-get($colors, $style, "700");
+        background-color: map-get($colors, $style, '700');
+        transition: background-color 0.5s;
       }
 
       &:active {
-        outline: 4px solid map-get($colors, $style, "300");;
+        z-index: 2;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05),
+          0 0 0 4px map-get($colors, $style, '100');
+        background-color: map-get($colors, $style, '600');
+      }
+
+      &:focus {
+        z-index: 2;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05),
+          0 0 0 4px map-get($colors, $style, '100');
+        background-color: map-get($colors, $style, '600');
       }
 
       &:disabled {
-        background-color: map-get($colors, $style, "200");
+        background-color: map-get($colors, $style, '200');
       }
     }
-
   }
 }
-
 
 .sm {
   height: 36px;
   padding: 8px 14px;
-
 }
 
 .md {

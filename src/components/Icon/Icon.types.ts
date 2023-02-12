@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export interface IconTypes {
-    children: React.ReactElement;
-    size: number
+export interface IconTypes extends React.HTMLAttributes<SVGElement> {
+  children: React.ReactElement;
+  size: number;
 }

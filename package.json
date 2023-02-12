@@ -4,7 +4,9 @@
   "description": "A react component library",
   "main": "dist/cjs/index.js",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "lint-fix": "eslint src/ --ext .js,.ts,.jsx,.tsx --fix",
+    "format": "prettier src/ --ext .js,.ts,.jsx,.tsx --write"
   },
   "author": "Erëza Begu",
   "license": "ISC",
@@ -13,7 +15,12 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/react": "^18.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.2",
     "postcss-custom-properties": "^12.1.11",
+    "prettier": "2.8.4",
     "react": "^18.2.0",
     "rollup": "^2.78.0",
     "rollup-plugin-dts": "^5.0.0",

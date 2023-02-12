@@ -1,10 +1,8 @@
-import React from "react";
+import React from 'react';
 
-interface IconProps extends React.SVGAttributes <SVGElement> {
-}
+type IconProps = React.SVGAttributes<SVGElement>;
 
-const useGenerateIcon = ({...props}: IconProps) => {
-
-    return React.createElement("svg", {...props})
-}
+const useGenerateIcon = ({ ...props }: IconProps) => {
+  return React.createElement('svg', { ...props });
+};
 export default useGenerateIcon;

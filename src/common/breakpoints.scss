@@ -1,7 +1,10 @@
 $breakpoints: (
-        'sm': 40rem, //640px
-        'md': 48rem, //768px
-        'lg': 64rem, //1,024px
+  'sm': 40rem,
+  //640px
+  'md': 48rem,
+  //768px
+  'lg': 64rem,
+  //1,024px
 ) !default;
 
 @mixin respond-to($breakpoint) {
@@ -14,4 +17,3 @@ $breakpoints: (
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
-

@@ -1,25 +1,25 @@
-@import "../../common/breakpoints";
+@import '../../common/breakpoints';
 
 .container {
   margin-left: auto;
   margin-right: auto;
 }
 
-@include respond-to("sm") {
+@include respond-to('sm') {
   .container {
     max-width: 608px;
     padding: 0 16px;
   }
 }
 
-@include respond-to("md") {
+@include respond-to('md') {
   .container {
     max-width: 704px;
     padding: 0 32px;
   }
 }
 
-@include respond-to("lg") {
+@include respond-to('lg') {
   .container {
     max-width: 960px;
     padding: 0 32px;

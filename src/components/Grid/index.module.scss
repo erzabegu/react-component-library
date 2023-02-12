@@ -1,10 +1,10 @@
-@import "../../common/breakpoints";
+@import '../../common/breakpoints';
 
 .Grid {
   display: grid;
 }
 
-@include respond-to("sm") {
+@include respond-to('sm') {
   .Grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -24,7 +24,7 @@
   }
 }
 
-@include respond-to("md") {
+@include respond-to('md') {
   .Grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -50,7 +50,7 @@
   }
 }
 
-@include respond-to("lg") {
+@include respond-to('lg') {
   .Grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

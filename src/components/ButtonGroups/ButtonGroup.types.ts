@@ -1,4 +1,3 @@
-import React from "react";
+import React from 'react';
 
-export interface ButtonGroupTypes extends React.HTMLAttributes<HTMLDivElement>{
-}
+export type ButtonGroupTypes = React.HTMLAttributes<HTMLDivElement>;

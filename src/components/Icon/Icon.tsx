@@ -1,11 +1,12 @@
 import React from 'react';
-import {IconTypes} from "./Icon.types";
+import { IconTypes } from './Icon.types';
 
-const Icon = ({children, size}: IconTypes) => {
-    return React.cloneElement(children, {
-        width: size,
-        height: size
-    });
-}
+const Icon = ({ children, size, ...rest }: IconTypes) => {
+  return React.cloneElement(children, {
+    width: size,
+    height: size,
+    ...rest,
+  });
+};
 
 export default Icon;
